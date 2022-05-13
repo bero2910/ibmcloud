@@ -7,7 +7,7 @@
 #!/bin/bash
 
 
-echo "Location,Service,Instance,CPU,RAM,Tier1GB,Tier3GB" >> powerout.csv
+echo "Location,Service,Instance,type,CPU,RAM,Tier1GB,Tier3GB" >> powerout.csv
 #ibmcloud pi sl | awk '{ print $1 }' | grep -v ID  | while read service
 #ibmcloud pi sl | grep -v ID | awk -F "::" '{ print  $2 }' |  sed -e 's/^[ \t]*//' | while read service
 ibmcloud pi sl | grep -v ID | while read service 
